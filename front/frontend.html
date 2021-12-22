@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="frontend.css" media="">
+    <title>Cadastro</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs...in.js"; integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+   
+    <script>
+        function mascara_CPF() {
+            var CPF = document.getElementById("CPF")
+            if(CPF.value.length == 3 || CPF.value.length == 7 ) {
+                CPF.value += "."
+            } else if(CPF.value.length == 11) {
+                CPF.value += "-"
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <div>
+        <h1 id="titulo">Cadastro de DEVs</h1>
+        <p id="subtitulo">complete suas informações</p> 
+        <br>
+    </div>
+
+    <form> 
+        <fieldset > 
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" nome="nome" id="nome" required>
+            </div>
+
+            <div class="campo"> 
+                <label for="CPF"><strong>CPF</strong></label>
+                <input type="text" id="CPF" maxlength="14" onkeyup="mascara_CPF()" required>
+            </div>
+        </fieldset>
+
+        
+        <div  class = "campo" >
+        <label for="cep"><strong>CEP</strong></label>
+        <input  class = " form-control col-4 " type = " text "   id = " cep " >
+    </div >
+
+    <div  class = " campo " >
+    <label for="cidade"><strong>Cidade</strong></label>
+    <input  class = " form-control " type = " text " name = " Cidade " id = " cidade " somente leitura >
+</div >
+
+<div  class = " campo " >
+    <label for="bairro"><strong>Bairro</strong></label>
+    <input  class = " form-control " type = " text " name = " Bairro " id = " Bairro " somente leitura >
+    </div >
+
+         <div>
+            <label for="Dias da semana"><strong>Dias da semana</strong></label>
+            <select id="Dias da semana">
+                <option selected disabled value="">Selecione</option>
+                <option>Terça / Quarta</option>
+                <option>aos Sabados</option>
+            </select>
+        </div>
+
+
+        <fieldset class="grupo">
+            <div id="checkbox">
+                <label><strong>Selecione as tecnologias do seu conhecimento:</strong> </label><br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1">HTML</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2">CSS</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                <label for="tecnologia3">JavaScript</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                <label for="tecnologia4">PHP</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                <label for="tecnologia5">C#</label>
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                <label for="tecnologia6">Python</label>
+                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                <label for="tecnologia7">Java</label>
+             </div>
+         </fieldset>
+
+         <div class="campo"> 
+             <br>
+             <label><strong>  Fale um pouco sobre seu conhecimento:</strong></label>
+             <textarea row="6" style="width: 26em" id="trilha" name="trilha"></textarea>
+         </div>
+
+         <a href="concluido.html"><button style="background: #1f2020; border-radius: 6px; padding: 15px; cursor: pointer; color: #fff; border: none; font-size: 16px;">concluido</button></a>
+ 
+        </form>
+
+        <script  type = " text / javascript " src = " js / jquery-3.4.1.min.js " > </script>
+        <Roteiro  src = " https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integridade =" SHA384-ZMP7rVo3mIykV + 2 + 9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK / l8WvCWPIPm49 " crossorigin = " anônimo " > </ script >
+        <Roteiro  src = " https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integridade =" SHA384-ChfqqxuZUCnJSK3 + MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW / JmZQ5stwEULTy " crossorigin =" anonymous " > </ script de >
+        <script  type = " text / javascript ">
+       
+    
+        
+        
+        </script>
+        <script src="app.js" ></script>
+</body>
+</html>

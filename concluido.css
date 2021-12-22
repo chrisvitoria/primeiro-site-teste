@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#titulo{
+    font-family: sans-serif;
+    color: #08333d;
+    margin-left: 7%;
+}
+
+#subtitulo{
+    font-family: sans-serif;
+    color:#070707;
+    margin-left: 10%;
+}
+
+
+
+
+body{
+    background-color: #f8fafc;
+    font-family: sans-serif;
+    color: #08333d;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+
+
+
+
+
+
